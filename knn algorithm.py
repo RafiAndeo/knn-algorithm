@@ -15,10 +15,16 @@ train = pd.read_excel(dataset, 'Train')
 test = pd.read_excel(dataset, 'Test')
 
 # Data Visualization
+sns.set(style="ticks", color_codes=True)
+
+# Scatterplot
 g = sns.PairGrid(train, vars=['Horsepower', 'Top Speed', 'Overpowered'],
                  hue='Car Brand', palette='Paired')
 g.map(plt.scatter, alpha=0.8)
 g.add_legend()
+
+# Boxplot
+sns.boxplot(data=train[["Horsepower", "Top Speed"]], palette="Paired")
 
 # Splitting the dataset into the Training set and Test set
 x_train = train[["Horsepower", "Top Speed"]]
@@ -32,13 +38,13 @@ x_train = sc.fit_transform(x_train)
 x_test = sc.transform(x_test)
 print(x_train, x_test)
 
-# K-Nearest Neighbors (K-NN) Algorithm
-
 # Euclidean Distance
 
 
 def euclidean_distance(x1, x2):
     return np.sqrt(np.sum((x1 - x2) ** 2))
+
+# K-Nearest Neighbors (K-NN) Algorithm
 
 
 def predict(x_train, y, x_input, k):
@@ -72,7 +78,20 @@ def predict(x_train, y, x_input, k):
     return op_labels
 
 
-# Predicting the Test set results
+# Ignore the warnings
 warnings.filterwarnings("ignore")
-y_pred = predict(x_train, y_train, x_test, 5)
-print(y_pred)
+
+# Predicting the Test set results
+
+
+def main():
+    k = 3
+    while k <= 21:
+        y_pred = predict(x_train, y_train, x_test, k)
+        print("K = ", k)
+        print("Prediksi: ", y_pred, "\n")
+        k += 2
+
+
+if __name__ == "__main__":
+    main()
