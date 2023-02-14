@@ -4,4 +4,5 @@
 
 ## Credits
 
-- [Muhammad Rafi Andeo Praja](https://github.com/RafiAndeo) (Author)
+- Author - [Muhammad Rafi Andeo Praja](https://github.com/RafiAndeo)
+- Website - [https://www.ea.com/games/need-for-speed/need-for-speed-unbound](https://www.ea.com/games/need-for-speed/need-for-speed-unbound)
