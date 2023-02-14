@@ -1,8 +1,8 @@
 <p align="center">
-  <a href="https://www.ea.com/games/need-for-speed/need-for-speed-unbound/about/car-list" target="blank"><img src="https://pbs.twimg.com/profile_images/1578027092327157773/u81LLqGb_400x400.png" width="200" alt="Nest Logo" /></a>
+  <a href="https://www.pysimplegui.org/en/latest/" target="blank"><img src="https://raw.githubusercontent.com/PySimpleGUI/PySimpleGUI/master/images/for_readme/Logo%20with%20text%20for%20GitHub%20Top.png" width="200" alt="Nest Logo" /></a>
 </p>
 
 ## Credits
 
 - Author - [Muhammad Rafi Andeo Praja](https://github.com/RafiAndeo)
-- Website - [https://www.ea.com/games/need-for-speed/need-for-speed-unbound](https://www.ea.com/games/need-for-speed/need-for-speed-unbound)
+- Website - [https://www.pysimplegui.org/en/latest/](https://www.pysimplegui.org/en/latest/)
